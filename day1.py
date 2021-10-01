@@ -1,8 +1,8 @@
 # cerner_2tothe5th_2021
 # get_exponent
-# A very inelegant way of getting an exponent. But it works.
+# A very inelegant way of getting the power of a number given a base and an exponent. But it works.
 
-def get_exponent(x, y):
+def get_power(x, y):
     i = 1
     z = 1
     while (i < y + 1):
@@ -10,6 +10,8 @@ def get_exponent(x, y):
         i = i + 1
     return z
 
-exponent = get_exponent(2, 10)
+base = 2
+exponent = 5
+power = get_power(base, exponent)
 
-print(exponent)
+print(f"Cerner's {base} to the {exponent} has me coding for {power} days.")
